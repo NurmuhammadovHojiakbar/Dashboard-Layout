@@ -5,6 +5,9 @@ const NavbarLogo = () => {
     const styles ={
         py: 2,
         px: 3,
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
     }
 
     return (

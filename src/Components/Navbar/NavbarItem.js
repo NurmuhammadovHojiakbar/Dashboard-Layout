@@ -7,7 +7,7 @@ const NavbarItem = ({item}) => {
 
     return (
         <ListItemButton onClick={()=>navigate(item.path)}>
-            <ListItemIcon sx={{color:"rgb(238, 238, 238)"}}>
+            <ListItemIcon sx={{color:"rgba(238, 238, 238,0.5)"}}>
                 {item.icon}
             </ListItemIcon>
             <ListItemText primary={item.text} />
