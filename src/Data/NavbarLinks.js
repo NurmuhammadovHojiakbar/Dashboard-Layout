@@ -1,50 +1,53 @@
-export const NavbarLinks = {
-    pages: {
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import LayersIcon from '@mui/icons-material/Layers';
+
+export const NavbarLinks = [
+    {
         title: "Pages",
-        navLinks: [
+        pages: [
             {
-                icon: "icon",
+                icon: <DashboardIcon />,
                 text: "Dashboard",
-                toWhere: "/dashboard",
+                path: "/dashboard",
             },
             {
-                icon: "icon",
+                icon: <LayersIcon />,
                 text: "Pages",
                 dropdown:[
                     {
                         text: "Profile",
-                        toWhere: "/profile",
+                        path: "/profile",
                     }, 
                     {
                         text: "Settings",
-                        toWhere: "/settings",
+                        path: "/settings",
                     }, 
                 ]
             },
         ]
     },
-    elements: {
+    {
         title: "Elements",
-        navLinks: [
+        pages: [
             {
-                icon: "icon",
-                text: "Dashboard",
-                toWhere: "/dashboard",
+                icon: <DashboardIcon />,
+                text: "Charts",
+                path: "/charts",
             },
             {
-                icon: "icon",
-                text: "Pages",
+                icon: <LayersIcon />,
+                text: "Components",
                 dropdown:[
                     {
-                        text: "Profile",
-                        toWhere: "/profile",
+                        text: "Buttons",
+                        path: "/buttons",
                     }, 
                     {
-                        text: "Settings",
-                        toWhere: "/settings",
+                        text: "Alert",
+                        path: "/alert",
                     }, 
                 ]
             },
         ]
     },
-}
+]

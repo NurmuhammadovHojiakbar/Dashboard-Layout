@@ -4,10 +4,10 @@ import Navbar from "../Components/Navbar/Navbar";
 const Layout = ({children}) => {
     return (
         <Grid container>
-            <Grid item md="4">
+            <Grid item md="3">
                 <Navbar />
             </Grid>
-            <Grid item md="8">
+            <Grid item md="9">
                 
             </Grid>
         </Grid>
