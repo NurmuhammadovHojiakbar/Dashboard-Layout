@@ -1,11 +1,20 @@
-import { List } from "@mui/material";
+import { Box, List } from "@mui/material";
 import { NavbarLinks } from "../../Data/NavbarLinks";
 import NavbarItem from "./NavbarItem";
 import NavbarItemDropdown from "./NavbarItemDropdown";
 
 const NavbarList = () => {
+
+    const styles = {
+        py: 2,
+        px: 3,
+    }
+
     return (
-        <>
+        <Box
+            component="div"
+            sx={styles}
+        >
             {
                 NavbarLinks.map(list =>(
                     <List subheader={list.title}>
@@ -20,7 +29,7 @@ const NavbarList = () => {
                     </List>
                 ))
             }
-        </>
+        </Box>
     );
 }
  

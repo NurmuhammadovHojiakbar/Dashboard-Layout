@@ -15,7 +15,7 @@ const NavbarItemDropdown = ({item}) => {
     return (
         <>
             <ListItemButton onClick={handleClick}>
-                <ListItemIcon>
+                <ListItemIcon sx={{color:"rgb(238, 238, 238)"}}>
                     {item.icon}
                 </ListItemIcon>
                 <ListItemText primary={item.text} />
