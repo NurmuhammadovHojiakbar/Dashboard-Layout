@@ -26,6 +26,7 @@ const Layout = ({children}) => {
             </Box>
             <Box sx={{flexGrow: 1}} >
                 <Header />
+                {children}
             </Box>
         </Box>
     );

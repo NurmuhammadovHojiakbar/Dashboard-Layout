@@ -1,6 +1,12 @@
+import SignIn from "../Pages/SignIn/SignIn";
+
 export const RouteComponents = [
     {
-        element: "element",
-        path: "/element"
+        element: <SignIn /> ,
+        path: "/"
+    },
+    {
+        element: <SignIn /> ,
+        path: "/profile"
     },
 ]
