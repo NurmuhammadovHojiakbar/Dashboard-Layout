@@ -1,9 +1,10 @@
 import { IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu"
 
-const Humburger = () => {
+const Humburger = ({setIsOpen}) => {
     return (
         <IconButton
+            onClick={()=>setIsOpen(true)}
             size="large"
             edge="start"
             color="inherit"

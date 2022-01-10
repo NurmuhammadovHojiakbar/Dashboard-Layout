@@ -8,23 +8,20 @@ const Layout = ({children}) => {
         display: "flex",
     }
 
-    const styles = {
-        bgcolor: 'rgb(35, 48, 68)', 
-        color: 'primary.contrastText',
-        height: "100vh",
-        display: {
-            xs: "none",
-            md: "block"
-        },
-        minWidth: "260px"
-    }
+    
 
     return (
         <Box 
             component="div"
             sx={style}    
         >
-            <Box sx={styles}>
+            
+            <Box sx={{
+                display: {
+                    xs: "none",
+                    md: "block"
+                },}}
+            >
                 <Navbar />
             </Box>
             <Box sx={{flexGrow: 1}} >
