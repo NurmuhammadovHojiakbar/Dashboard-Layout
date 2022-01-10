@@ -1,16 +1,36 @@
-import { Grid } from "@mui/material";
+import { Box } from "@mui/material";
+import Header from "../Components/Header/Header";
 import Navbar from "../Components/Navbar/Navbar";
 
 const Layout = ({children}) => {
+
+    const style = {
+        display: "flex",
+    }
+
+    const styles = {
+        bgcolor: 'rgb(35, 48, 68)', 
+        color: 'primary.contrastText',
+        height: "100vh",
+        display: {
+            xs: "none",
+            md: "block"
+        },
+        minWidth: "260px"
+    }
+
     return (
-        <Grid container>
-            <Grid item md="3">
+        <Box 
+            component="div"
+            sx={style}    
+        >
+            <Box sx={styles}>
                 <Navbar />
-            </Grid>
-            <Grid item md="9">
-                
-            </Grid>
-        </Grid>
+            </Box>
+            <Box sx={{flexGrow: 1}} >
+                <Header />
+            </Box>
+        </Box>
     );
 }
  
