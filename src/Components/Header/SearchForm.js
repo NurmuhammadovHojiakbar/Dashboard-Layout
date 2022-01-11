@@ -13,12 +13,17 @@ const SearchForm = () => {
         '&:hover': {
           backgroundColor: alpha(theme.palette.common.white, 0.25),
         },
-        marginRight: theme.spacing(2),
-        marginLeft: 0,
-        width: '100%',
+        [theme.breakpoints.up('xs')]: {
+          width: '100%',
+          order: 1,
+          marginRight: "0px",
+          marginBottom: "16px",
+        },
         [theme.breakpoints.up('sm')]: {
-          marginLeft: theme.spacing(3),
-          width: 'auto',
+          marginRight: theme.spacing(2),
+          order: 0,
+          marginBottom: "0px",
+          width: "auto",
         },
       }));
       

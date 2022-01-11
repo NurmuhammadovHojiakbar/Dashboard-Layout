@@ -8,11 +8,12 @@ import SearchForm from "./SearchForm";
 const Header = () => {
 
     const [isOpen, setIsOpen] = useState(false)
+    const toolbarStyles = {flexWrap:{xs: "wrap", sm:"nowrap"}}
 
     return (
         <Box component="div">
             <AppBar position="static">
-                <Toolbar>
+                <Toolbar sx={toolbarStyles}>
                     <Humburger setIsOpen={setIsOpen} />
                     <SearchForm />
                     <ButtonIcons />

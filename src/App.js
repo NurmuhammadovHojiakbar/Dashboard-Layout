@@ -7,7 +7,7 @@ import SignIn from './Pages/SignIn/SignIn';
 
 function App() {
 
-  const token = true
+  const token = false;
 
   return (
     <div className="App">

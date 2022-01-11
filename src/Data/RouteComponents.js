@@ -2,11 +2,11 @@ import SignIn from "../Pages/SignIn/SignIn";
 
 export const RouteComponents = [
     {
-        element: <SignIn /> ,
+        element: "Hello" ,
         path: "/"
     },
     {
-        element: <SignIn /> ,
+        element: "Hello" ,
         path: "/profile"
     },
 ]
